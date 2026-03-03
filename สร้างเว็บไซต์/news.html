@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ข่าวประชาสัมพันธ์ | มูลนิธิส่งเสริมการศึกษาวิจัยการควบคุมโรค</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: { sans: ['Prompt', 'sans-serif'] }
+    }
+  }
+}
+</script>
+
+<script>
+function searchNews() {
+  let input = document.getElementById("searchInput").value.toLowerCase();
+  let cards = document.getElementsByClassName("news-card");
+
+  for (let i = 0; i < cards.length; i++) {
+    let text = cards[i].innerText.toLowerCase();
+    cards[i].style.display = text.includes(input) ? "block" : "none";
+  }
+}
+</script>
+
+</head>
+
+<body class="font-sans bg-gray-100 text-gray-800">
+
+<!-- Header -->
+<header class="bg-white shadow">
+  <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-20">
+    <div class="flex items-center gap-4">
+      <img src="logo.jpg" class="h-14">
+      <div>
+        <h1 class="font-bold text-lg text-blue-800">
+          มูลนิธิส่งเสริมการศึกษาวิจัย
+        </h1>
+        <p class="text-sm text-gray-600">การควบคุมโรค</p>
+      </div>
+    </div>
+
+    <nav class="hidden md:flex gap-8 text-sm font-medium">
+      <a href="index.html">หน้าแรก</a>
+      <a href="about.html">เกี่ยวกับมูลนิธิ</a>
+      <a href="board.html">คณะกรรมการ</a>
+      <a href="projects.html">โครงการ</a>
+      <a href="news.html" class="text-blue-800 font-semibold">ข่าวประชาสัมพันธ์</a>
+      <a href="donate.html">ร่วมบริจาค</a>
+      <a href="contact.html">ติดต่อเรา</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Title -->
+<section class="bg-blue-800 text-white py-12 text-center">
+  <h2 class="text-2xl font-bold">ข่าวประชาสัมพันธ์</h2>
+</section>
+
+<!-- Search -->
+<section class="py-8 bg-white">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <input type="text" id="searchInput" onkeyup="searchNews()" 
+    placeholder="ค้นหาข่าว..."
+    class="w-full md:w-1/2 border border-gray-300 rounded px-4 py-2">
+  </div>
+</section>
+
+<!-- ข่าวเด่น -->
+<section class="bg-yellow-100 py-6 text-center">
+  <p class="font-semibold text-blue-800">
+    🔔 ประกาศรับข้อเสนอโครงการวิจัย ประจำปีงบประมาณ 2569
+  </p>
+</section>
+
+<!-- News List -->
+<section class="py-12">
+  <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8">
+
+    <div class="news-card bg-white shadow rounded-lg p-6">
+      <p class="text-xs text-gray-500 mb-2">เผยแพร่วันที่: 15 มกราคม 2569</p>
+      <h3 class="font-bold text-blue-800 mb-3">
+        มูลนิธิสนับสนุนทุนวิจัยด้านโรคติดต่ออุบัติใหม่
+      </h3>
+      <p class="text-sm mb-4">
+        เปิดรับข้อเสนอโครงการวิจัยเพื่อพัฒนาระบบเฝ้าระวังและควบคุมโรคติดต่ออุบัติใหม่
+      </p>
+      <a href="#" class="text-blue-700 text-sm">อ่านเพิ่มเติม →</a>
+    </div>
+
+    <div class="news-card bg-white shadow rounded-lg p-6">
+      <p class="text-xs text-gray-500 mb-2">เผยแพร่วันที่: 5 ธันวาคม 2568</p>
+      <h3 class="font-bold text-blue-800 mb-3">
+        จัดประชุมวิชาการด้านการควบคุมโรคระดับประเทศ
+      </h3>
+      <p class="text-sm mb-4">
+        มูลนิธิร่วมสนับสนุนการประชุมวิชาการเพื่อพัฒนาศักยภาพบุคลากรสาธารณสุข
+      </p>
+      <a href="#" class="text-blue-700 text-sm">อ่านเพิ่มเติม →</a>
+    </div>
+
+    <div class="news-card bg-white shadow rounded-lg p-6">
+      <p class="text-xs text-gray-500 mb-2">เผยแพร่วันที่: 1 ตุลาคม 2568</p>
+      <h3 class="font-bold text-blue-800 mb-3">
+        รายงานผลการดำเนินงานประจำปี 2568
+      </h3>
+      <p class="text-sm mb-4">
+        เผยแพร่รายงานผลการดำเนินงานและการใช้จ่ายงบประมาณประจำปี
+      </p>
+      <a href="#" class="text-blue-700 text-sm">ดาวน์โหลดรายงาน (PDF)</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-gray-400 text-center py-6">
+  © 2026 มูลนิธิส่งเสริมการศึกษาวิจัยการควบคุมโรค
+</footer>
+
+</body>
+</html>

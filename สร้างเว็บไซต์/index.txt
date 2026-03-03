@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>มูลนิธิส่งเสริมการศึกษาวิจัยการควบคุมโรค</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: { sans: ['Prompt', 'sans-serif'] },
+      colors: {
+        primary: {
+          500: '#1d4ed8',
+          600: '#1e40af',
+          700: '#1e3a8a'
+        }
+      }
+    }
+  }
+}
+</script>
+
+<style>
+html { scroll-behavior: smooth; }
+.hero {
+  background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+  url('https://images.unsplash.com/photo-1584036561566-b93a58161f8c');
+  background-size: cover;
+  background-position: center;
+}
+</style>
+</head>
+
+<body class="font-sans bg-gray-50 text-gray-700">
+
+<!-- Header -->
+<header class="bg-white shadow-md fixed w-full z-50">
+  <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-20">
+    
+    <div class="flex items-center gap-4">
+      <img src="logo.jpg" class="h-14 w-auto" alt="โลโก้มูลนิธิ">
+      <div>
+        <h1 class="font-bold text-lg text-primary-700 leading-tight">
+          มูลนิธิส่งเสริมการศึกษาวิจัย
+        </h1>
+        <p class="text-sm text-gray-600">การควบคุมโรค</p>
+      </div>
+    </div>
+
+    <nav class="hidden md:flex gap-8 font-medium text-sm">
+      <a href="index.html" class="hover:text-blue-700">หน้าแรก</a>
+      <a href="about.html" class="hover:text-blue-700">เกี่ยวกับมูลนิธิ</a>
+      <a href="board.html" class="hover:text-blue-700">คณะกรรมการ</a>
+      <a href="projects.html" class="hover:text-blue-700">โครงการ</a>
+      <a href="news.html" class="hover:text-blue-700">ข่าวประชาสัมพันธ์</a>
+      <a href="donate.html" class="text-blue-800 font-semibold">ร่วมบริจาค</a>
+      <a href="contact.html" class="hover:text-blue-700">ติดต่อเรา</a>
+    </nav>
+
+  </div>
+</header>
+
+<!-- Hero -->
+<section id="home" class="hero h-[600px] flex items-center justify-center text-white text-center pt-20">
+  <div>
+    <h2 class="text-4xl md:text-5xl font-bold mb-6">
+      ร่วมสร้างสังคมปลอดภัยจากโรค
+    </h2>
+    <p class="text-lg mb-8">
+      สนับสนุนงานวิจัยและพัฒนาการควบคุมโรคเพื่อประชาชนไทย
+    </p>
+    <a href="#contact" class="bg-primary-600 px-8 py-3 rounded-full text-white font-semibold hover:bg-primary-700 transition">
+      ร่วมสนับสนุน
+    </a>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold text-primary-700 mb-6">เกี่ยวกับมูลนิธิ</h2>
+    <p class="max-w-3xl mx-auto text-gray-600 leading-relaxed">
+      มูลนิธิส่งเสริมการศึกษาวิจัยการควบคุมโรค
+      มีวัตถุประสงค์เพื่อสนับสนุนการศึกษาวิจัย พัฒนาบุคลากร
+      และเผยแพร่ความรู้ด้านการควบคุมโรค เพื่อยกระดับสุขภาพของประชาชนไทยอย่างยั่งยืน
+    </p>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="py-20 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center text-primary-700 mb-12">โครงการสำคัญ</h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition">
+        <h3 class="font-bold text-xl mb-3">ทุนวิจัยด้านระบาดวิทยา</h3>
+        <p class="text-gray-600">
+          สนับสนุนนักวิจัยและแพทย์ในการศึกษาการแพร่กระจายของโรคอุบัติใหม่
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition">
+        <h3 class="font-bold text-xl mb-3">อบรมบุคลากรสาธารณสุข</h3>
+        <p class="text-gray-600">
+          พัฒนาศักยภาพบุคลากรทางการแพทย์ด้านการควบคุมโรคในพื้นที่
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition">
+        <h3 class="font-bold text-xl mb-3">โครงการชุมชนปลอดโรค</h3>
+        <p class="text-gray-600">
+          ส่งเสริมความรู้และการป้องกันโรคในระดับชุมชนทั่วประเทศ
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-20 bg-white">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold text-primary-700 mb-6">ติดต่อเรา</h2>
+    <p class="text-gray-600 mb-4">
+      มูลนิธิส่งเสริมการศึกษาวิจัยการควบคุมโรค อาคาร 10 ชั้น 1 กรมควบคุมโรค กระทรวงสาธารณสุข 88/21 ถนนติวานนท์ ตำบลตลาดขวัญ อำเภอเมืองนนทบุรี จังหวัดนนทบุรี 11000
+    </p>
+    <p class="text-gray-600 mb-2">โทรศัพท์: 0 2590 3251-3</p>
+    <p class="text-gray-600">อีเมลfdcrp.ddc@gmail.com</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-gray-400 text-center py-6">
+  © 2026 มูลนิธิส่งเสริมการศึกษาวิจัยการควบคุมโรค
+</footer>
+
+</body>
+</html>
